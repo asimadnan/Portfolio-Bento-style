@@ -34,12 +34,38 @@ const GridItems: GridItemInterface[] = [
         type: "social",
         title: "LinkedIn",
         icon: "linkedin",
-        username: "michel-fawaz",
+        username: "asimadnan",
         description:
             "Connect with me on LinkedIn to explore my professional journey and stay updated on my latest achievements and projects showcased in my portfolio website.",
         color: "#0077b5",
         buttonTitle: "Connect With me!",
-        buttonLink: "https://www.linkedin.com/in/michel-fawaz/",
+        buttonLink: "https://www.linkedin.com/in/asimadnan/",
+        // buttonSecondaryText: "1.1K",
+    },
+    {
+        layout: "2x2",
+        type: "social",
+        title: "Instagram",
+        icon: "instagram",
+        username: "asimadnan",
+        description:
+            "Connect with me on LinkedIn to explore my professional journey and stay updated on my latest achievements and projects showcased in my portfolio website.",
+        color: "#0077b5",
+        buttonTitle: "Connect With me!",
+        buttonLink: "https://www.instagram.com/asimadnan/",
+        // buttonSecondaryText: "1.1K",
+    },
+    {
+        layout: "2x2",
+        type: "social",
+        title: "Medium",
+        icon: "medium",
+        username: "asimadnan",
+        description:
+            "Connect with me on Medium to Read my Blogs",
+        color: "#0077b5",
+        buttonTitle: "Connect With me!",
+        buttonLink: "https://medium.com/@asimadnan",
         // buttonSecondaryText: "1.1K",
     },
     //   {
@@ -58,10 +84,10 @@ const GridItems: GridItemInterface[] = [
         type: "social",
         title: "Github",
         icon: "github",
-        username: "@michelfawazz",
+        username: "@asimadnan",
         buttonTitle: "Follow Me!",
         buttonSecondaryText: "",
-        buttonLink: "https://github.com/michelfawazz",
+        buttonLink: "https://github.com/asimadnan",
         color: "#070707",
         description:
             "Click on me to view my open-source projects!",
@@ -71,13 +97,13 @@ const GridItems: GridItemInterface[] = [
         type: "social",
         title: "Twitter",
         icon: "twitter",
-        username: "@michelNfawaz",
+        username: "@asimadnan",
         buttonTitle: "Follow",
-        buttonLink: "https://twitter.com/michelnfawaz",
+        buttonLink: "https://twitter.com/asimadnan",
         buttonSecondaryText: "193",
         color: "#1DA1F2",
         description:
-            "Software Engineer building in Public!",
+            "ML Engineer building in Public!",
     },
     {
         layout: "1x2",
@@ -86,7 +112,7 @@ const GridItems: GridItemInterface[] = [
         icon: "resume",
         username: "",
         buttonTitle: "Download",
-        buttonLink: "https://utfs.io/f/f3db2131-47fe-47f2-a80b-6fa0bbea97a9-8a3mok.pdf",
+        buttonLink: "#",
         buttonSecondaryText: "",
         color: "#070707",
         description:
@@ -103,28 +129,28 @@ const GridItems: GridItemInterface[] = [
             "Book a 30 min Call with me",
         color: "#070707",
         buttonTitle: "Schedule",
-        buttonLink: "https://calendly.com/michelfawaz/30min",
+        buttonLink: "https://calendly.com/asimadnan",
         // buttonSecondaryText: "1.1K",
     },
-    {
-        layout: "2x1",
-        type: "project",
-        title: "Sign in with Ethereum",
-        icon: "github",
-        color: "#070707",
-        buttonLink: "https://github.com/michelfawazz/SIWE-NextJs-Nestjs",
-        stars: 1,
-    },
-    {
-        layout: "2x1",
-        type: "project",
-        title: "NestJS JWT Auth template",
-        icon: "github",
-        color: "#070707",
-        stars: 2,
+    // {
+    //     layout: "2x1",
+    //     type: "project",
+    //     title: "Sign in with Ethereum",
+    //     icon: "github",
+    //     color: "#070707",
+    //     buttonLink: "https://github.com/asimadnan/SIWE-NextJs-Nestjs",
+    //     stars: 1,
+    // },
+    // {
+    //     layout: "2x1",
+    //     type: "project",
+    //     title: "NestJS JWT Auth template",
+    //     icon: "github",
+    //     color: "#070707",
+    //     stars: 2,
 
-        buttonLink: "https://github.com/michelfawazz/NestJS-Jwt-AUTH-arangodb",
-    },
+    //     buttonLink: "https://github.com/asimadnan/NestJS-Jwt-AUTH-arangodb",
+    // },
     // {
     //     layout: "2x1",
     //     type: "mentor",
@@ -177,7 +203,20 @@ const GridItems: GridItemInterface[] = [
     //     type: "experience",
     //     title: "Professional Experience",
         
- 
+    // {
+    //     layout: "1x2",
+    //     type: "social",
+    //     title: "InfinityTools",
+    //     username: "",
+    //     description:
+    //         "A collection of AI tools",
+    //     icon: "next",
+    //     buttonTitle: "Coming Soon!",
+    //     buttonSecondaryText: "",
+    //     buttonLink:
+    //         "/",
+    // },
+
 ];
 
 const GridItemsLower: GridItemInterface[] = [
@@ -186,12 +225,12 @@ const GridItemsLower: GridItemInterface[] = [
     //     type: "social",
     //     title: "LinkedIn",
     //     icon: "linkedin",
-    //     username: "michel-fawaz",
+    //     username: "asimadnan",
     //     description:
     //         "Connect with me on LinkedIn to explore my professional journey and stay updated on my latest achievements and projects showcased in my portfolio website.",
     //     color: "#0077b5",
     //     buttonTitle: "Connect",
-    //     buttonLink: "https://www.linkedin.com/in/michel-fawaz/",
+    //     buttonLink: "https://www.linkedin.com/in/asimadnan/",
     //     // buttonSecondaryText: "1.1K",
     // },
     //   {
@@ -210,10 +249,10 @@ const GridItemsLower: GridItemInterface[] = [
     //     type: "social",
     //     title: "Github",
     //     icon: "github",
-    //     username: "@michelfawazz",
+    //     username: "@asimadnan",
     //     buttonTitle: "Follow",
     //     buttonSecondaryText: "",
-    //     buttonLink: "https://github.com/michelfawazz",
+    //     buttonLink: "https://github.com/asimadnan",
     //     color: "#070707",
     //     description:
     //         "Click on me to view my open-source projects!",
@@ -223,9 +262,9 @@ const GridItemsLower: GridItemInterface[] = [
     //     type: "social",
     //     title: "Twitter",
     //     icon: "twitter",
-    //     username: "@michelNfawaz",
+    //     username: "@asimadnan",
     //     buttonTitle: "Follow",
-    //     buttonLink: "https://twitter.com/michelnfawaz",
+    //     buttonLink: "https://twitter.com/asimadnan",
     //     buttonSecondaryText: "193",
     //     color: "#1DA1F2",
     //     description:
@@ -250,7 +289,7 @@ const GridItemsLower: GridItemInterface[] = [
     //     title: "Sign in with Ethereum",
     //     icon: "github",
     //     color: "#070707",
-    //     buttonLink: "https://github.com/michelfawazz/SIWE-NextJs-Nestjs",
+    //     buttonLink: "https://github.com/asimadnan/SIWE-NextJs-Nestjs",
     //     stars: 1,
     // },
     // {
@@ -277,101 +316,115 @@ const GridItemsLower: GridItemInterface[] = [
     ,{
         layout: "1x2",
         type: "social",
-        title: "InfinityTools",
+        title: "ASVSpoof",
         username: "",
         description:
-            "A collection of AI tools",
-        icon: "next",
-        buttonTitle: "Coming Soon!",
+            "Research thesis",
+        icon: "resume",
+        buttonTitle: "View",
         buttonSecondaryText: "",
         buttonLink:
-            "/",
+            "https://figshare.mq.edu.au/articles/thesis/Counter_measure_system_for_automatic_speaker_verification_systems/21482952/1",
+    },
+
+    {
+        layout: "1x2",
+        type: "social",
+        title: "Effects of OUD",
+        username: "",
+        description:
+            "Research paper",
+        icon: "resume",
+        buttonTitle: "View",
+        buttonSecondaryText: "",
+        buttonLink:
+            "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0278988",
     },
 
     
-    {
-        layout: "2x2",
-        type: "social",
-        title: "Restaurant Web3 Membership System NFT ",
-        username: "Le Vesuvio",
-        description:
-            "NFT collection and membership website made for Le Vesuvio restaurant.",
-        icon: "next",
-        buttonTitle: "View Project",
-        buttonSecondaryText: "",
-        buttonLink:
-            "https://vesuv.io/",
-    },
-    {
-        layout: "1x2",
-        type: "social",
-        title: "AI Agency",
-        username: "",
-        description:
-            "Generate Ai employees that you can Chat with!",
-        icon: "next",
-        buttonTitle: "Coming Soon!",
-        buttonSecondaryText: "",
-        buttonLink:
-            "/",
-    },
-    {
-        layout: "2x1",
-        type: "project",
-        title: "KnowledgeBase Chat AI Saas ",
-        icon: "github",
-        stars: 1,
-        color: "#070707",
-        buttonLink: "https://github.com/",
-    }
-    ,{
-        layout: "2x2",
-        type: "social",
-        title: "AktionT4 NFT Collection & Backend",
-        username: "",
-        description:
-            "Aktion T4 Blockchain and Backend Development",
-        icon: "ethereum",
-        buttonTitle: "View Project",
-        buttonSecondaryText: "",
-        buttonLink:
-            "https://aktionT4.com",
-    },
-    ,{
-        layout: "1x2",
-        type: "social",
-        title: "NFT GAME 1024",
-        username: "",
-        description:
-            "Smart Contract and Website development of 1024 Blockchain Game",
-        icon: "ethereum",
-        buttonTitle: "View Project",
-        buttonSecondaryText: "",
-        buttonLink:
-            "1024-landingpage-tan.vercel.app",
-    },
-    {
-        layout: "1x2",
-        type: "social",
-        title: "Priority Queue Management System",
-        username: "QueueUp",
-        description:
-            "Priority Queue management system built with django",
-        icon: "django",
-        buttonTitle: "View Project",
-        buttonSecondaryText: "",
-        buttonLink:
-            "https://github.com/michelfawazz/QueueUp",
-    },
-    {
-        layout: "2x1",
-        type: "project",
-        title: "Portfolio Website Source Code",
-        icon: "github",
-        stars: 1,
-        color: "#070707",
-        buttonLink: "https://github.com/michelfawazz/Portfolio-Bento-style",
-    }
+    // {
+    //     layout: "2x2",
+    //     type: "social",
+    //     title: "Restaurant Web3 Membership System NFT ",
+    //     username: "Le Vesuvio",
+    //     description:
+    //         "NFT collection and membership website made for Le Vesuvio restaurant.",
+    //     icon: "next",
+    //     buttonTitle: "View Project",
+    //     buttonSecondaryText: "",
+    //     buttonLink:
+    //         "https://vesuv.io/",
+    // },
+    // {
+    //     layout: "1x2",
+    //     type: "social",
+    //     title: "AI Agency",
+    //     username: "",
+    //     description:
+    //         "Generate Ai employees that you can Chat with!",
+    //     icon: "next",
+    //     buttonTitle: "Coming Soon!",
+    //     buttonSecondaryText: "",
+    //     buttonLink:
+    //         "/",
+    // },
+    // {
+    //     layout: "2x1",
+    //     type: "project",
+    //     title: "KnowledgeBase Chat AI Saas ",
+    //     icon: "github",
+    //     stars: 1,
+    //     color: "#070707",
+    //     buttonLink: "https://github.com/",
+    // }
+    // ,{
+    //     layout: "2x2",
+    //     type: "social",
+    //     title: "AktionT4 NFT Collection & Backend",
+    //     username: "",
+    //     description:
+    //         "Aktion T4 Blockchain and Backend Development",
+    //     icon: "ethereum",
+    //     buttonTitle: "View Project",
+    //     buttonSecondaryText: "",
+    //     buttonLink:
+    //         "https://aktionT4.com",
+    // },
+    // ,{
+    //     layout: "1x2",
+    //     type: "social",
+    //     title: "NFT GAME 1024",
+    //     username: "",
+    //     description:
+    //         "Smart Contract and Website development of 1024 Blockchain Game",
+    //     icon: "ethereum",
+    //     buttonTitle: "View Project",
+    //     buttonSecondaryText: "",
+    //     buttonLink:
+    //         "1024-landingpage-tan.vercel.app",
+    // },
+    // {
+    //     layout: "1x2",
+    //     type: "social",
+    //     title: "Priority Queue Management System",
+    //     username: "QueueUp",
+    //     description:
+    //         "Priority Queue management system built with django",
+    //     icon: "django",
+    //     buttonTitle: "View Project",
+    //     buttonSecondaryText: "",
+    //     buttonLink:
+    //         "https://github.com/asimadnan/QueueUp",
+    // },
+    // {
+    //     layout: "2x1",
+    //     type: "project",
+    //     title: "Portfolio Website Source Code",
+    //     icon: "github",
+    //     stars: 1,
+    //     color: "#070707",
+    //     buttonLink: "https://github.com/asimadnan/Portfolio-Bento-style",
+    // }
 
     // {
     //     layout:"4x4",
@@ -390,13 +443,13 @@ const GridItemsLower: GridItemInterface[] = [
 
 
 export const siteConfig = {
-    creator: "Michel fawaz",
-    title: "Software Engineer",
-    bio: "Software Engineer | Full Stack, Generative AI, Blockchain | Architecting Scalable SaaS",
-    location: "United States",
+    creator: "Asim Adnan Eijaz",
+    title: "Machine Learning Engineer",
+    bio: "Machine Learning Engineer |Generative AI, MLOps | Deep Learning, NLP",
+    location: "Sydney, Australia",
     locationLink:
         "",
-    email: "michelfawaz87@gmail.com",
+    email: "me@asimadnan.com",
     items: GridItems,
     itemsLower: GridItemsLower,
 } as const;

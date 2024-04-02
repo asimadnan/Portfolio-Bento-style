@@ -12,13 +12,18 @@ const LeftPanel = () => {
         >
             {/* Top Container */}
             <div>
-                <div>
+                <div style={{
+    borderRadius: '50%',
+    overflow: 'hidden',
+    border: '2px solid #000', // Adjust the color and width as needed
+    display: 'inline-block' // This helps in applying the borderRadius correctly
+}}>
                     <Image
                         priority
                         loading="eager"
                         alt="avatar"
                         
-                        src="/wave.PNG"
+                        src="/asim.JPG"
                         
                         width={220}
                         height={220}
