@@ -1,4 +1,5 @@
 import { Analytics } from '@vercel/analytics/react';
+import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
@@ -26,6 +27,7 @@ export default function RootLayout({
           <div className="flex flex-col h-full">{children}</div>
         </ThemeProvider>
         <Analytics />
+        <GoogleAnalytics gaId="G-DW4SKLBJZ4" />
         </body>
     </html>
   )
