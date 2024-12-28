@@ -35,3 +35,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 # Portfolio-Bento-style
+
+
+## How to edit the bento design
+
+everything comes from config/site-config.ts

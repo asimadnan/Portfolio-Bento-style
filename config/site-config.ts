@@ -32,6 +32,35 @@ const GridItems: GridItemInterface[] = [
     {
         layout: "2x2",
         type: "social",
+        title: "Youtube Video to Blog Generator",
+        icon: "next",
+        // username: "asimadnan",
+        // description:
+        //     "Connect with me on Medium to Read my Blogs",
+        color: "#0077b5",
+        buttonTitle: "Visit",
+        buttonLink: "https://youtube-to-blogpost-asim.streamlit.app/",
+        // buttonSecondaryText: "1.1K",
+    },
+
+    {
+        layout: "2x2",
+        type: "social",
+        title: "Working Day Calculator - WebApp",
+        icon: "next",
+        // username: "asimadnan",
+        // description:
+        //     "Connect with me on LinkedIn to explore my professional journey and stay updated on my latest achievements and projects showcased in my portfolio website.",
+        color: "#0077b5",
+        buttonTitle: "Visit",
+        buttonLink: "https://working-days-calculator.vercel.app/",
+        // buttonSecondaryText: "1.1K",
+    },
+    
+    
+    {
+        layout: "2x2",
+        type: "social",
         title: "LinkedIn",
         icon: "linkedin",
         username: "asimadnan",
@@ -40,19 +69,6 @@ const GridItems: GridItemInterface[] = [
         color: "#0077b5",
         buttonTitle: "Connect With me!",
         buttonLink: "https://www.linkedin.com/in/asimadnan/",
-        // buttonSecondaryText: "1.1K",
-    },
-    {
-        layout: "2x2",
-        type: "social",
-        title: "Instagram",
-        icon: "instagram",
-        username: "asimadnan",
-        description:
-            "Connect with me on LinkedIn to explore my professional journey and stay updated on my latest achievements and projects showcased in my portfolio website.",
-        color: "#0077b5",
-        buttonTitle: "Connect With me!",
-        buttonLink: "https://www.instagram.com/asimadnan/",
         // buttonSecondaryText: "1.1K",
     },
     {
