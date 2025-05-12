@@ -32,8 +32,29 @@ const GridItems: GridItemInterface[] = [
     {
         layout: "2x2",
         type: "social",
+        title: "Customer Comment/Review Analysis with LLM",
+        icon: "github",
+        color: "#0077b5",
+        buttonTitle: "Visit",
+        buttonLink: "https://github.com/asimadnan/llm-text-categorization",
+        // buttonSecondaryText: "1.1K",
+    },
+
+    {
+        layout: "2x2",
+        type: "social",
+        title: "Talent Scount - AI Agent",
+        icon: "github",
+        color: "#0077b5",
+        buttonTitle: "Visit",
+        buttonLink: "https://github.com/asimadnan/talentscout-ai",
+        // buttonSecondaryText: "1.1K",
+    },
+    {
+        layout: "2x2",
+        type: "social",
         title: "Youtube Video to Blog Generator",
-        icon: "next",
+        icon: "github",
         // username: "asimadnan",
         // description:
         //     "Connect with me on Medium to Read my Blogs",
@@ -42,12 +63,48 @@ const GridItems: GridItemInterface[] = [
         buttonLink: "https://youtube-to-blogpost-asim.streamlit.app/",
         // buttonSecondaryText: "1.1K",
     },
+    {
+        layout: "2x2",
+        type: "social",
+        title: "Linkedin Activity to Heatmap Generator",
+        icon: "github",
+        // username: "asimadnan",
+        // description:
+        //     "Connect with me on Medium to Read my Blogs",
+        color: "#0077b5",
+        buttonTitle: "Visit",
+        buttonLink: "https://github.com/asimadnan/linkedin-activity-heatmap",
+        // buttonSecondaryText: "1.1K",
+    },
+    
+    {
+        layout: "2x2",
+        type: "social",
+        title: "Preferential Voting Visualiser",
+        icon: "github",
+        color: "#0077b5",
+        buttonTitle: "Visit",
+        buttonLink: "https://voting.asimadnan.com/",
+        // buttonSecondaryText: "1.1K",
+    },
+    {
+        layout: "2x2",
+        type: "social",
+        title: "Australian Pay Calculator",
+        icon: "github",
+        color: "#0077b5",
+        buttonTitle: "Visit",
+        buttonLink: "https://paycalculator.asimadnan.com/",
+        // buttonSecondaryText: "1.1K",
+    },
+
+   
 
     {
         layout: "2x2",
         type: "social",
-        title: "Working Day Calculator - WebApp",
-        icon: "next",
+        title: "Working Day Calculator",
+        icon: "github",
         // username: "asimadnan",
         // description:
         //     "Connect with me on LinkedIn to explore my professional journey and stay updated on my latest achievements and projects showcased in my portfolio website.",
