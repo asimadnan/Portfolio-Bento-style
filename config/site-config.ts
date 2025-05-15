@@ -185,7 +185,7 @@ const GridItems: GridItemInterface[] = [
         icon: "resume",
         username: "",
         buttonTitle: "Download",
-        buttonLink: "#",
+        buttonLink: "/files/asimadnan_resume_2024_ai.pdf",
         buttonSecondaryText: "",
         color: "#070707",
         description:
