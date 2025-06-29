@@ -32,6 +32,16 @@ const GridItems: GridItemInterface[] = [
     {
         layout: "2x2",
         type: "social",
+        title: "LinkedLift - Improve your linkedin profile",
+        icon: "github",
+        color: "#0077b5",
+        buttonTitle: "Visit",
+        buttonLink: "https://linkedlift.asimadnan.com/",
+        // buttonSecondaryText: "1.1K",
+    },
+    {
+        layout: "2x2",
+        type: "social",
         title: "Sales Call Analysis with LLM",
         icon: "github",
         color: "#0077b5",
