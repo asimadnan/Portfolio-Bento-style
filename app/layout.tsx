@@ -1,17 +1,17 @@
-import { Analytics } from '@vercel/analytics/react';
-import { GoogleAnalytics } from '@next/third-parties/google'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
 
-
-import { ThemeProvider } from "@/components/theme-provider";
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+})
 
 export const metadata: Metadata = {
-  title: 'Asim Adnan Eijaz ',
-  description: 'Asim Adnan Eijaz Portfolio Website',
+  title: "Asim Adnan Eijaz - ML Engineer Portfolio",
+  description: "Machine Learning Engineer specializing in Generative AI, MLOps, and NLP",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -20,15 +20,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex flex-col h-full">{children}</div>
-        </ThemeProvider>
-        <Analytics />
-        <GoogleAnalytics gaId="G-DW4SKLBJZ4" />
-        </body>
+    <html lang="en" className={inter.variable}>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   )
 }

@@ -1,51 +1,50 @@
-import Footer from "@/components/footer";
-import GridItem from "@/components/grid-item";
-import Equipments from "@/components/grid-items/equipments";
-import Experience from "@/components/grid-items/experience";
-import Mentor from "@/components/grid-items/mentor";
-import Project from "@/components/grid-items/project";
-import Social from "@/components/grid-items/social";
-import LeftPanel from "@/components/left-panel";
-import RightPanel from "@/components/right-panel";
-import { siteConfig } from "@/config/site-config";
-import MidPanel from "@/components/mid-panel";
-export default function Home() {
+import { projects } from "@/lib/projects"
+import { ProjectCard } from "@/components/project-card"
+import { Hero } from "@/components/hero"
+import { ContactSection } from "@/components/contact-section"
+import { Footer } from "@/components/footer"
+import { BlogSection } from "@/components/blog-section"
+
+export default function Portfolio() {
+  const featuredProjects = projects.filter((project) => project.featured)
+  const allProjects = projects.filter((project) => !project.featured)
+
   return (
-    <main className="relative flex flex-col items-center flex-1 w-full h-full">
-      {/* Pattern */}
-      <div className="absolute inset-0 z-0 bg-light-pattern dark:bg-dark-pattern bg-3" />
-      {/* Overlay */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-white via-white/90 to-white dark:from-neutral-950 dark:via-neutral-950/90 dark:to-neutral-950" />
-      <div className="container relative z-20 flex flex-col w-full h-full px-6 gap:6 xl:gap-10 xl:flex-row">
-        {/* Left Panel */}
-        <LeftPanel />
-        {/* Right Panel */}
-        <RightPanel />
-        {/* Footer for Mobile */}
-       
-      </div>
+    <div className="min-h-screen bg-black text-white">
+      <Hero />
 
-
-      <div className="container relative z-20 flex pb-6 mb-6">
-        <MidPanel />
-
-
-      </div>
-
-
-      
-
-
-      <div className="container relative z-20 flex pb-6 ">
-
-
-      
-          <Footer />
+      {/* Featured Projects */}
+      <section className="py-20 px-6 max-w-7xl mx-auto">
+        <div className="mb-16">
+          <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
+          <p className="text-gray-400 text-lg">Showcasing my most impactful work in AI and Machine Learning</p>
         </div>
 
-     
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+          {featuredProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} featured />
+          ))}
+        </div>
+      </section>
 
- 
-    </main>
-  );
+      <BlogSection />
+      {/* All Projects */}
+      <section className="py-20 px-6 max-w-7xl mx-auto">
+        <div className="mb-16">
+          <h2 className="text-4xl font-bold mb-4">All Projects</h2>
+          <p className="text-gray-400 text-lg">A comprehensive collection of my work across different domains</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {allProjects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
+      </section>
+
+    
+      <ContactSection />
+      <Footer />
+    </div>
+  )
 }
