@@ -1,0 +1,21 @@
+import { NavBar } from "@/components/nav-bar"
+import { HeroBanner } from "@/components/hero-banner"
+import { RowCarousel } from "@/components/row-carousel"
+import { FooterBar } from "@/components/footer-bar"
+import { PROJECT_ROWS, HERO_FEATURE } from "@/lib/data"
+
+export default function Page() {
+  return (
+    <main className="min-h-screen bg-black text-white">
+      <NavBar />
+      <HeroBanner feature={HERO_FEATURE} />
+      {/* Rows container: no negative margin, normal stacking */}
+      <section className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8 space-y-10 pb-24 mt-0">
+        {PROJECT_ROWS.map((row) => (
+          <RowCarousel key={row.id} row={row} />
+        ))}
+      </section>
+      <FooterBar />
+    </main>
+  )
+}

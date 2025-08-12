@@ -1,55 +1,110 @@
 import { NextResponse } from "next/server"
-import Parser from "rss-parser"
 
-export interface MediumPost {
-  title: string
-  link: string
-  pubDate: string
-  description: string
-  thumbnail?: string
-  categories: string[]
-}
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url)
+  const username = searchParams.get("username")
 
-const parser = new Parser()
-
-// Helper: extract first <img … src="…"> from HTML
-function extractImage(html?: string) {
-  if (!html) return null
-  const match = html.match(/<img[^>]+src="([^">]+)"/i)
-  return match ? match[1] : null
-}
-
-export async function GET() {
-  try {
-    // Medium’s built-in RSS feed
-    const rssUrl = "https://medium.com/feed/@asimadnan"
-
-    // Fetch the raw XML (server-side → no CORS problems)
-    const res = await fetch(rssUrl, {
-      headers: { "User-Agent": "Mozilla/5.0 (v0.dev fetcher)" },
-      // Re-fetch once per hour
-      next: { revalidate: 60 * 60 },
-    })
-
-    if (!res.ok) throw new Error(`HTTP ${res.status}`)
-
-    const xml = await res.text()
-
-    // Parse XML → JSON
-    const feed = await parser.parseString(xml)
-
-    const posts: MediumPost[] = (feed.items || []).map((item) => ({
-      title: item.title ?? "Untitled",
-      link: item.link ?? "#",
-      pubDate: item.pubDate ?? "",
-      description: (item["content:encoded"] || item.content || "").replace(/<[^>]+>/g, "").slice(0, 150) + "…",
-      thumbnail: extractImage(item["content:encoded"] || item.content) || "/placeholder.svg?height=200&width=400",
-      categories: item.categories ?? [],
-    }))
-
-    return NextResponse.json({ posts })
-  } catch (err) {
-    console.error("Failed to fetch Medium posts:", err)
-    return NextResponse.json({ error: "Medium fetch failed", posts: [] }, { status: 500 })
+  if (!username) {
+    return NextResponse.json({ error: "Username required" }, { status: 400 })
   }
+
+  try {
+    // Try both common Medium RSS formats
+    const urls = [`https://medium.com/@${username}/feed`, `https://medium.com/feed/@${username}`]
+
+    let response
+    let rssText = ""
+
+    for (const url of urls) {
+      try {
+        response = await fetch(url, {
+          headers: {
+            "User-Agent": "Mozilla/5.0 (compatible; Portfolio/1.0)",
+          },
+        })
+        if (response.ok) {
+          rssText = await response.text()
+          break
+        }
+      } catch (e) {
+        continue
+      }
+    }
+
+    if (!rssText) {
+      throw new Error("Could not fetch Medium RSS")
+    }
+
+    // Parse RSS XML
+    const posts = parseRSS(rssText)
+    return NextResponse.json({ posts })
+  } catch (error) {
+    console.error("Medium API error:", error)
+    return NextResponse.json({ error: "Failed to fetch Medium posts" }, { status: 500 })
+  }
+}
+
+function parseRSS(rssText: string) {
+  const posts = []
+
+  // Extract items using regex (simple XML parsing)
+  const itemRegex = /<item>([\s\S]*?)<\/item>/g
+  let match
+
+  while ((match = itemRegex.exec(rssText)) !== null) {
+    const itemContent = match[1]
+
+    const title = extractTag(itemContent, "title")
+    const link = extractTag(itemContent, "link")
+    const pubDate = extractTag(itemContent, "pubDate")
+    const description = extractTag(itemContent, "description")
+    const content = extractTag(itemContent, "content:encoded") || description
+
+    // Extract image from content
+    const imageMatch = content?.match(/<img[^>]+src="([^"]+)"/)
+    const image = imageMatch ? imageMatch[1] : null
+
+    // Clean description
+    const cleanDescription =
+      description
+        ?.replace(/<[^>]*>/g, "")
+        ?.substring(0, 200)
+        ?.trim() + "..."
+
+    // Format date
+    const date = pubDate
+      ? new Date(pubDate).toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+        })
+      : ""
+
+    if (title && link) {
+      posts.push({
+        id: link.split("/").pop()?.split("?")[0] || Math.random().toString(),
+        title: cleanHtml(title),
+        url: link,
+        date,
+        source: "Medium",
+        image: image || "/placeholder.svg?height=900&width=600",
+        excerpt: cleanDescription || "",
+      })
+    }
+  }
+
+  return posts.slice(0, 10) // Limit to 10 posts
+}
+
+function extractTag(content: string, tag: string): string | null {
+  const regex = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i")
+  const match = content.match(regex)
+  return match ? match[1].trim() : null
+}
+
+function cleanHtml(text: string): string {
+  return text
+    .replace(/<!\[CDATA\[(.*?)\]\]>/g, "$1")
+    .replace(/<[^>]*>/g, "")
+    .trim()
 }
