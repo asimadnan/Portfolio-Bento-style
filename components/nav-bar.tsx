@@ -14,7 +14,7 @@ export function NavBar() {
         <div className="flex items-center gap-6">
           <Link href="/" className="font-extrabold tracking-tight">
             <span className="text-2xl text-red-600">ASIM</span>
-            <span className="text-2xl text-white">FLIX</span>
+            <span className="text-2xl text-white">.AE</span>
           </Link>
           <nav className="hidden md:flex items-center gap-5 text-sm text-zinc-300">
             <a href="#home" className="hover:text-white">
