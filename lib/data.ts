@@ -10,7 +10,7 @@ export const PROFILE_HERO = {
   backdrop: "/placeholder.svg?height=1080&width=1920",
   ctas: {
     email: "hello@asimadnan.com",
-    resume: "/asimadnan_resume_2024.pdf",
+    resume: "/asimadnan_resume_2025_AI.pdf",
     github: "https://github.com/asimadnan",
     linkedin: "https://www.linkedin.com/in/asimadnan/",
   },

@@ -59,7 +59,7 @@ export function NavBar() {
             variant="outline"
             className="border-red-600 text-white hover:bg-red-600 hover:text-white bg-transparent"
           >
-            <a href="/asimadnan_resume_2024.pdf" target="_blank" rel="noreferrer">
+            <a href="/asimadnan_resume_2025_AI.pdf" target="_blank" rel="noreferrer">
               <FileText className="mr-2 h-4 w-4" />
               Resume
             </a>
@@ -121,7 +121,7 @@ export function NavBar() {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="/asimadnan_resume_2024.pdf"
+              href="/asimadnan_resume_2025_AI.pdf"
               target="_blank"
               className="rounded-md bg-red-600 px-3 py-2 text-sm font-medium"
               rel="noreferrer"
