@@ -1,4 +1,5 @@
 import { Analytics } from '@vercel/analytics/next';
+import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
@@ -29,6 +30,7 @@ html {
       <body>
         {children}
         <Analytics />
+         <GoogleAnalytics gaId="G-L8JYV438HW" />
       </body>
     </html>
   )
