@@ -1,10 +1,10 @@
 "use client"
 
 import { useEffect, useMemo, useState } from "react"
-import { NavBar } from "@/components/nav-bar"
-import { HeroProfile } from "@/components/hero-profile"
-import { RowCarousel, type Project, type Row } from "@/components/row-carousel"
-import { FooterBar } from "@/components/footer-bar"
+import NavBar from "@/components/nav-bar"
+import HeroProfile from "@/components/hero-profile"
+import RowCarousel, { type Project, type Row } from "@/components/row-carousel"
+import FooterBar from "@/components/footer-bar"
 import type { ProfileData, ConnectItem, Blog } from "@/lib/types"
 
 export default function Page() {
