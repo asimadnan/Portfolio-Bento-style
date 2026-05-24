@@ -21,6 +21,7 @@ export async function GET(request: Request) {
           headers: {
             "User-Agent": "Mozilla/5.0 (compatible; Portfolio/1.0)",
           },
+          signal: AbortSignal.timeout(5000),
         })
         if (response.ok) {
           rssText = await response.text()
@@ -65,11 +66,12 @@ function parseRSS(rssText: string) {
     const image = imageMatch ? imageMatch[1] : null
 
     // Clean description
-    const cleanDescription =
-      description
-        ?.replace(/<[^>]*>/g, "")
-        ?.substring(0, 200)
-        ?.trim() + "..."
+    const cleanedDescription = description
+      ? cleanHtml(description).replace(/\s+/g, " ").trim()
+      : ""
+    const cleanDescription = cleanedDescription && cleanedDescription !== "undefined"
+      ? `${cleanedDescription.substring(0, 200).trim()}...`
+      : ""
 
     // Format date
     const date = pubDate

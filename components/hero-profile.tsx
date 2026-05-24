@@ -55,7 +55,7 @@ export function HeroProfile({ profile }: { profile: Profile }) {
               <Button asChild size="lg" className="bg-white text-black hover:bg-zinc-200">
                 <a href={`mailto:${profile.ctas.email}`}>
                   <Mail className="mr-2 h-5 w-5" />
-                  Contact Me
+                  Contact
                 </a>
               </Button>
             )}

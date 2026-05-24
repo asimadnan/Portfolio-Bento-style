@@ -11,14 +11,28 @@ export const metadata: Metadata = {
   generator: 'Asim',
 }
 
+const themeInitScript = `
+(function () {
+  try {
+    var preference = window.localStorage.getItem("themePreference");
+    window.localStorage.removeItem("theme");
+    var theme = preference === "light" || preference === "dark"
+      ? preference
+      : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.classList.toggle("dark", theme === "dark");
+  } catch (error) {}
+})();
+`
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <style>{`
 html {
   font-family: ${GeistSans.style.fontFamily};

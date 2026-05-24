@@ -4,7 +4,7 @@ import { useRef, useState, useEffect } from "react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-import { ExternalLink, Github, Pause, Play, Volume2, VolumeX } from "lucide-react"
+import { ExternalLink, Github, Lock, Pause, Play, Volume2, VolumeX } from "lucide-react"
 
 type Project = {
   id: string
@@ -61,6 +61,8 @@ export function ProjectDialog({
     v.muted = !v.muted
     setMuted(v.muted)
   }
+
+  const isPrivate = project.links?.live === "private-project" || project.links?.code === "private-project"
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -126,7 +128,13 @@ export function ProjectDialog({
             </DialogHeader>
             <p className="text-sm leading-relaxed text-zinc-200">{project.description}</p>
             <div className="flex flex-wrap gap-2 pt-2">
-              {project.links?.live ? (
+              {isPrivate ? (
+                <Button disabled className="bg-zinc-800 text-zinc-300 opacity-100">
+                  <Lock className="mr-2 h-4 w-4" />
+                  Private Project
+                </Button>
+              ) : null}
+              {project.links?.live && !isPrivate ? (
                 <Button asChild className="bg-white text-black hover:bg-zinc-200">
                   <a href={project.links.live} target="_blank" rel="noreferrer">
                     <ExternalLink className="mr-2 h-4 w-4" />
@@ -134,7 +142,7 @@ export function ProjectDialog({
                   </a>
                 </Button>
               ) : null}
-              {project.links?.code ? (
+              {project.links?.code && !isPrivate ? (
                 <Button asChild variant="secondary" className="bg-zinc-800 text-white hover:bg-zinc-700">
                   <a href={project.links.code} target="_blank" rel="noreferrer">
                     <Github className="mr-2 h-4 w-4" />
@@ -148,7 +156,7 @@ export function ProjectDialog({
           <div className="grid grid-cols-2 gap-3 text-xs text-zinc-300 md:grid-cols-2">
             <InfoItem label="Type" value="Project" />
             <InfoItem label="Stack" value={project.tags?.join(", ") || "—"} />
-            <InfoItem label="Status" value={project.links?.live ? "Live" : "Preview"} />
+            <InfoItem label="Status" value={isPrivate ? "Private" : project.links?.live ? "Live" : "Preview"} />
             <InfoItem label="Owner" value="Asim Adnan Eijaz" />
           </div>
         </div>

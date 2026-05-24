@@ -1,0 +1,716 @@
+[
+  {
+    "slug": "executive-intelligence-system",
+    "title": "Executive Intelligence System",
+    "eyebrow": "Executive Operations",
+    "summary": "Weekly AI-generated operational briefings for leadership teams.",
+    "hero": "AI-powered complaint intelligence for executive operational oversight",
+    "image": "/Executive Intelligence System.png",
+    "client": "Confidential enterprise team",
+    "industry": "Customer operations",
+    "year": "2026",
+    "status": "Production AI workflow",
+    "duration": "Operational system",
+    "sections": [
+      {
+        "title": "Overview",
+        "paragraphs": [
+          "Large organizations often collect huge volumes of customer complaints, but the information does not automatically become useful intelligence.",
+          "In this case, complaint data already existed inside the organization. It was captured through multiple channels, stored in enterprise systems, and visualized through business intelligence dashboards. But the workflow was not designed for fast executive oversight.",
+          "Executives did not need another dashboard to explore manually. They needed a weekly view of what mattered, what changed, what carried risk, and where leadership attention was required.",
+          "The result was an automated Executive Intelligence System: a production AI workflow that turns raw complaint records into a concise weekly leadership briefing."
+        ]
+      },
+      {
+        "title": "The operational challenge",
+        "paragraphs": [
+          "The organization already had a formal complaints process and a Power BI reporting layer. Managers and customer service teams could use dashboards to inspect complaint volumes, categories, and service performance.",
+          "But the executive workflow was different.",
+          "The existing dashboard helped with reporting, but it was not built for fast weekly executive sense-making.",
+          "It also relied heavily on broad human-assigned categories from a fixed list. Those categories were useful for reporting, but they often missed the nuance inside the actual complaint text.",
+          "For example, a broad category might show that complaints increased in a particular area, but it would not explain that several complaints were specifically about landscaping quality, repeated delays, communication gaps, or a sensitive escalation risk.",
+          "The data existed. The insight was buried inside it."
+        ],
+        "bullets": [
+          "What changed last week?",
+          "Which assets or locations are seeing complaint spikes?",
+          "Are there sensitive complaints that require executive awareness?",
+          "Are any teams falling behind service-level expectations?",
+          "Are the underlying complaint themes changing?",
+          "How does this period compare with the same time last year?"
+        ]
+      },
+      {
+        "title": "Before",
+        "paragraphs": [
+          "Executives had to rely on static dashboards, broad complaint categories, and manual interpretation to understand what was happening across the business."
+        ],
+        "bullets": [
+          "Weekly oversight required manual dashboard exploration.",
+          "Complaint categories were too broad to explain what customers were actually saying.",
+          "Sensitive issues could be hard to separate from routine complaints.",
+          "Emerging clusters were not always obvious early.",
+          "Year-on-year comparison required additional manual interpretation.",
+          "Executives had to spend attention finding the signal instead of acting on it."
+        ]
+      },
+      {
+        "title": "The AI opportunity",
+        "paragraphs": [
+          "The high-value opportunity was not simply “summarize complaints with AI.”",
+          "The real opportunity was to convert raw complaint records into a consistent executive briefing workflow.",
+          "The AI system needed to behave less like a generic text summarizer and more like an operational analyst."
+        ],
+        "bullets": [
+          "Identify meaningful changes from the previous week.",
+          "Detect complaint clusters and emerging patterns.",
+          "Highlight sensitive complaint types based on business-specific criteria.",
+          "Surface assets or locations with unusual complaint movement.",
+          "Explain the actual content behind category trends.",
+          "Compare current patterns with the same period in the previous year.",
+          "Generate commentary that was concise, relevant, and suitable for leadership audiences."
+        ]
+      },
+      {
+        "title": "The solution",
+        "paragraphs": [
+          "I helped design and implement a scheduled AI reporting workflow that produces a weekly executive email every Monday.",
+          "The system connects to complaint records from the enterprise data warehouse, applies structured analysis, and generates a leadership-ready briefing.",
+          "Instead of giving executives another dashboard to inspect, the system gives them a curated weekly operational intelligence layer."
+        ],
+        "bullets": [
+          "A summary of what happened in the previous week.",
+          "Sensitive complaints requiring executive awareness.",
+          "Assets or locations with unusual complaint activity.",
+          "New clusters or major increases in complaint themes.",
+          "Service-level risk areas.",
+          "Category-level trends.",
+          "Year-on-year comparison against the same period.",
+          "AI-generated commentary based on the actual complaint content."
+        ]
+      },
+      {
+        "title": "How the system works",
+        "steps": [
+          { "label": "Extract", "body": "Complaint records are pulled from the enterprise data warehouse." },
+          { "label": "Structure", "body": "The system groups, filters, and prepares complaint data by time period, asset, category, severity, service status, and comparison window." },
+          { "label": "Analyze", "body": "AI is used to interpret complaint content, detect patterns, explain category movement, and generate business-relevant commentary." },
+          { "label": "Contextualize", "body": "Business rules and contextual information are provided so that the AI can distinguish between routine movement and issues that deserve executive attention." },
+          { "label": "Govern", "body": "Access controls and distribution logic ensure the email is only sent to approved recipients with the right data access." },
+          { "label": "Deliver", "body": "The final briefing is sent automatically to the executive audience on a weekly schedule." }
+        ]
+      },
+      {
+        "title": "Trust and governance considerations",
+        "paragraphs": [
+          "This project required more than prompt engineering.",
+          "Because the output was going to executive stakeholders, consistency and governance mattered."
+        ],
+        "bullets": [
+          "Making sure commentary was repeatable and structured week to week.",
+          "Preventing the AI from over-emphasizing low-value noise.",
+          "Giving the AI enough business context to generate relevant alerts.",
+          "Ensuring sensitive complaint logic was aligned with the organization’s risk criteria.",
+          "Limiting distribution to people with the appropriate access.",
+          "Designing the report so it was useful without requiring users to understand the underlying dashboard."
+        ],
+        "closing": "The hard part was not only generating a summary. The hard part was deciding what was worth summarizing."
+      },
+      {
+        "title": "Impact",
+        "paragraphs": [
+          "The system shifted executive complaint oversight from manual dashboard exploration to proactive operational intelligence."
+        ],
+        "bullets": [
+          "Faster weekly visibility for leadership.",
+          "Reduced manual effort required to interpret complaint movement.",
+          "Better understanding of what customers were actually complaining about.",
+          "Earlier identification of sensitive or emerging issues.",
+          "More consistent weekly reporting.",
+          "Improved ability to connect complaint volume with complaint content.",
+          "Better executive awareness of service-level risk."
+        ],
+        "closing": "The value was not that AI wrote an email. The value was that executives received a focused, consistent, business-aware view of complaint risk and customer experience every week."
+      },
+      {
+        "title": "What this project demonstrates",
+        "paragraphs": [
+          "This project shows how AI can create value when it is embedded into a real operational workflow.",
+          "The organization did not need a generic chatbot. It needed a reliable weekly intelligence system that understood complaint data, business context, sensitivity criteria, and executive reporting needs.",
+          "The system turned fragmented operational records into decision-ready leadership insight."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "acquisition-intelligence-platform",
+    "title": "Acquisition Intelligence Platform",
+    "eyebrow": "Acquisitions",
+    "summary": "Source-grounded site intelligence for earlier acquisition decisions.",
+    "hero": "AI-assisted site intelligence for earlier, faster, and more evidence-based acquisition decisions",
+    "image": "/Acquisition Intelligence Platform.png",
+    "client": "Confidential acquisition team",
+    "industry": "Property and development",
+    "year": "2026",
+    "status": "Internal platform workflow",
+    "duration": "Operational system",
+    "sections": [
+      {
+        "title": "Overview",
+        "paragraphs": [
+          "Acquisition teams often make early decisions with incomplete information.",
+          "Detailed feasibility work can be expensive and time-consuming, which means it usually happens later in the process. By then, teams may have already invested significant time into an opportunity before discovering planning constraints, infrastructure issues, market risks, or other factors that materially affect the attractiveness of a site.",
+          "This project focused on moving intelligence earlier in the acquisition workflow.",
+          "The result was an AI-powered Acquisition Intelligence Platform integrated into an internal product used by acquisition teams to explore potential sites."
+        ]
+      },
+      {
+        "title": "The operational challenge",
+        "paragraphs": [
+          "Acquisition decisions require many different types of information.",
+          "The problem is not that this information does not exist.",
+          "The problem is that it is scattered across many public and internal sources, varies in quality, and takes time to review properly.",
+          "Traditional feasibility work can identify these issues, but often too late in the opportunity lifecycle. Manual research can also miss important signals, especially when analysts have to review large numbers of sources under time pressure."
+        ],
+        "bullets": [
+          "Planning applications.",
+          "Zoning and land use.",
+          "Infrastructure projects.",
+          "Transport access.",
+          "Demographics.",
+          "Market activity.",
+          "Comparable developments.",
+          "Environmental considerations.",
+          "Local constraints.",
+          "News and public signals.",
+          "Opportunity-specific risks."
+        ]
+      },
+      {
+        "title": "Before",
+        "paragraphs": [
+          "Before the platform, early-stage acquisition assessment involved a lot of manual research and judgment."
+        ],
+        "bullets": [
+          "Important feasibility risks were sometimes discovered late.",
+          "Analysts had to search across many fragmented public sources.",
+          "Research depth varied depending on time, experience, and source availability.",
+          "Large numbers of sources made it difficult to separate signal from noise.",
+          "Opportunity-specific relevance was hard to judge consistently.",
+          "Teams needed faster ways to compare and prioritize potential sites."
+        ]
+      },
+      {
+        "title": "The AI opportunity",
+        "paragraphs": [
+          "The opportunity was not simply to “search the web with AI.”",
+          "The real opportunity was to create a structured acquisition intelligence workflow.",
+          "A generic research agent would not be enough.",
+          "The system needed to understand the purpose of the site investigation. For example, if the opportunity involved a specific development use case, the system needed to prioritize information that could materially affect that use case and ignore irrelevant noise."
+        ],
+        "bullets": [
+          "Search deeply across relevant public information.",
+          "Assess source trustworthiness.",
+          "Filter irrelevant material.",
+          "Evaluate information against a specific acquisition purpose.",
+          "Apply different evaluation blueprints for different opportunity types.",
+          "Produce a source-grounded report that acquisition teams could trust."
+        ]
+      },
+      {
+        "title": "The solution",
+        "paragraphs": [
+          "I helped build an AI-powered site intelligence workflow that sits inside the acquisition team’s internal product.",
+          "The platform supports users exploring potential acquisition opportunities by generating structured intelligence reports from public and internal signals.",
+          "The goal was not to replace acquisition judgment.",
+          "The goal was to give teams a faster, more consistent evidence base earlier in the decision process."
+        ],
+        "bullets": [
+          "Gather information from a wide range of sources.",
+          "Assess whether a source is trustworthy.",
+          "Determine whether the source is relevant to the specific opportunity.",
+          "Filter large numbers of sources down to meaningful evidence.",
+          "Apply purpose-specific evaluation blueprints.",
+          "Generate reports in both PDF and HTML formats.",
+          "Provide citations and links to original sources for each factual claim."
+        ]
+      },
+      {
+        "title": "How the system works",
+        "steps": [
+          { "label": "Define the opportunity", "body": "The user provides the site or opportunity context, including what the team is trying to assess." },
+          { "label": "Search and collect evidence", "body": "The system gathers relevant information from public and internal sources." },
+          { "label": "Evaluate source quality", "body": "Sources are assessed for trustworthiness, relevance, and usefulness." },
+          { "label": "Apply opportunity blueprints", "body": "The agent uses structured evaluation blueprints depending on the type of opportunity being assessed." },
+          { "label": "Filter noise", "body": "The system may identify hundreds of sources, but only a subset are relevant enough to support the final report." },
+          { "label": "Generate evidence-linked outputs", "body": "The platform produces a report with source-backed facts, key findings, risks, and decision-support insights." }
+        ]
+      },
+      {
+        "title": "Trust and governance considerations",
+        "paragraphs": [
+          "Trust was central to this system.",
+          "In acquisition workflows, an unsupported AI claim is not useful. Teams need to know where a fact came from and whether they should rely on it.",
+          "The platform was therefore designed around evidence and traceability."
+        ],
+        "bullets": [
+          "Source-level citation for factual claims.",
+          "Relevance assessment based on the opportunity context.",
+          "Source trustworthiness evaluation.",
+          "Filtering of low-quality or irrelevant information.",
+          "Structured blueprints to make agent reasoning more consistent.",
+          "Report formats that let users inspect and verify original sources."
+        ],
+        "closing": "The system was designed to reduce hallucination risk by grounding outputs in source material."
+      },
+      {
+        "title": "Impact",
+        "paragraphs": [
+          "The platform moved acquisition intelligence earlier in the workflow."
+        ],
+        "bullets": [
+          "Faster early-stage feasibility assessment.",
+          "Better visibility of risks before deeper investment of time and cost.",
+          "More consistent research quality across opportunities.",
+          "Reduced manual effort in collecting and reviewing public information.",
+          "Improved ability to compare potential sites using structured criteria.",
+          "Better decision confidence through cited, source-grounded reporting.",
+          "Reduced risk of missing relevant public signals."
+        ],
+        "closing": "The value was not simply faster research. The value was giving acquisition teams a more reliable intelligence layer before committing to expensive downstream investigation."
+      },
+      {
+        "title": "What this project demonstrates",
+        "paragraphs": [
+          "This project demonstrates how AI can support high-value expert workflows when it is designed around domain-specific reasoning, source trust, and decision context.",
+          "The system did not ask AI to make acquisition decisions.",
+          "It helped teams see more, earlier, with stronger evidence."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "cad-to-structured-data-pipeline",
+    "title": "CAD-to-Structured Data Pipeline",
+    "eyebrow": "Data Engineering",
+    "summary": "Turning masterplan drawings into structured lot-level data.",
+    "hero": "Turning masterplan drawings into structured operational data",
+    "image": "/CAD-to-Structured Data Pipeline.png",
+    "client": "Confidential planning team",
+    "industry": "Property and development",
+    "year": "2026",
+    "status": "Operational data pipeline",
+    "duration": "Operational system",
+    "sections": [
+      {
+        "title": "Overview",
+        "paragraphs": [
+          "In many property and development workflows, a masterplan drawing is more than a visual document.",
+          "It contains the foundation of the project: lots, boundaries, dimensions, areas, attributes, and spatial relationships that downstream teams depend on.",
+          "But if that information remains trapped inside CAD drawings, teams end up recreating the same data manually across spreadsheets, maps, pricing models, development workflows, and sales systems.",
+          "This project focused on turning masterplan drawings into structured, reusable, operational data."
+        ]
+      },
+      {
+        "title": "The operational challenge",
+        "paragraphs": [
+          "The organization worked with masterplan drawings supplied in inconsistent formats and styles.",
+          "Historically, parts of this process involved printing masterplans, interpreting drawings manually, and maintaining project mix data in spreadsheets.",
+          "That workflow created a fragile foundation for downstream operations.",
+          "When lot-level data is manually created or re-entered across systems, every downstream function is affected — development, pricing, cost tracking, sales, discounts, enquiries, and reporting."
+        ],
+        "bullets": [
+          "Lot boundaries.",
+          "Boundary polygons.",
+          "Lot dimensions.",
+          "Lot areas.",
+          "Lot attributes.",
+          "Spatial layout.",
+          "Classification details such as regular or corner lots."
+        ]
+      },
+      {
+        "title": "Before",
+        "paragraphs": [
+          "The old workflow relied heavily on manual interpretation and spreadsheet-based tracking."
+        ],
+        "bullets": [
+          "Lot data had to be extracted manually from drawings.",
+          "Different suppliers produced CAD files in different structures.",
+          "Teams relied on spreadsheets as operational references.",
+          "Lot attributes and geometry could become inconsistent across systems.",
+          "Downstream teams did not always have a single source of truth from the beginning.",
+          "Manual handling increased the risk of errors and rework."
+        ]
+      },
+      {
+        "title": "The AI opportunity",
+        "paragraphs": [
+          "The opportunity was to use AI and geospatial processing to convert complex masterplan drawings into structured data that could support the full project lifecycle.",
+          "The goal was not only extraction.",
+          "The goal was to create a reliable lot-level data foundation."
+        ],
+        "bullets": [
+          "Accept masterplan drawings from different suppliers.",
+          "Identify individual lots.",
+          "Extract each lot boundary as a polygon.",
+          "Calculate or validate dimensions and area.",
+          "Capture lot-level attributes.",
+          "Visualize the extracted data on a map.",
+          "Produce structured tables for downstream use.",
+          "Support validation where geometry or calculations were uncertain."
+        ]
+      },
+      {
+        "title": "The solution",
+        "paragraphs": [
+          "I helped build a CAD-to-structured-data pipeline that allows users to upload masterplan drawings and receive structured lot-level outputs.",
+          "The system extracts lot boundaries and attributes, converts them into tabular and geospatial formats, and visualizes them on a map.",
+          "The resulting dataset can then act as a reliable starting point for downstream workflows.",
+          "Instead of treating the drawing as a static artifact, the pipeline turns it into an operational data layer."
+        ]
+      },
+      {
+        "title": "How the system works",
+        "steps": [
+          { "label": "Upload masterplan drawing", "body": "Users provide the source drawing." },
+          { "label": "Parse and interpret geometry", "body": "The system identifies lot structures, boundaries, and spatial relationships." },
+          { "label": "Extract lot-level data", "body": "Each lot is converted into a structured record with geometry, dimensions, area, and attributes." },
+          { "label": "Validate and normalize", "body": "The system handles inconsistencies across supplier drawings and applies checks to detect geometry or calculation issues." },
+          { "label": "Visualize", "body": "The extracted project mix is displayed on a map for review." },
+          { "label": "Publish downstream", "body": "Structured lot data becomes available for downstream development, pricing, sales, enquiry, and reporting workflows." }
+        ]
+      },
+      {
+        "title": "Trust and governance considerations",
+        "paragraphs": [
+          "This project involved real-world CAD complexity.",
+          "The challenge was not simply reading a clean file. The system had to deal with inconsistent drawings from different suppliers, different conventions, and occasional geometry issues."
+        ],
+        "bullets": [
+          "Variation in CAD drawing structure.",
+          "Supplier-specific drawing conventions.",
+          "Small geometry and calculation discrepancies.",
+          "Validation of lot dimensions and areas.",
+          "Review workflows for uncertain outputs.",
+          "Preventing downstream systems from relying on incorrect geometry.",
+          "Creating a reliable single source of truth from the start of the project lifecycle."
+        ],
+        "closing": "This is where human-in-the-loop validation matters. For high-value spatial data, AI should accelerate extraction, but validation is essential before downstream reliance."
+      },
+      {
+        "title": "Impact",
+        "paragraphs": [
+          "The system changed the role of masterplan drawings in the operational workflow.",
+          "Instead of being manually interpreted and re-entered into spreadsheets, drawings could become structured data assets."
+        ],
+        "bullets": [
+          "Reduced manual effort in extracting lot-level information.",
+          "Faster creation of complete project mix data.",
+          "Better consistency across development, pricing, and sales workflows.",
+          "Earlier creation of a lot-level single source of truth.",
+          "Reduced rework caused by manual spreadsheet handling.",
+          "Improved ability to visualize and validate project data spatially.",
+          "Stronger downstream analytics and reporting foundations."
+        ],
+        "closing": "The value was not just automation. The value was creating a data foundation that supports the full lifecycle of each lot from planning through to sales and performance tracking."
+      },
+      {
+        "title": "What this project demonstrates",
+        "paragraphs": [
+          "This project demonstrates one of the strongest use cases for applied AI in enterprise settings: converting unstructured or semi-structured operational artifacts into reusable systems of record.",
+          "The business did not need another dashboard.",
+          "It needed a way to turn planning artifacts into reliable operational infrastructure."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "enterprise-knowledge-assistant",
+    "title": "Enterprise Knowledge Assistant",
+    "eyebrow": "Knowledge Systems",
+    "summary": "Governed natural-language access to operational performance data.",
+    "hero": "A governed decision-navigation layer for complex operational data",
+    "image": "/Enterprise Knowledge Assistant.png",
+    "client": "Confidential business unit",
+    "industry": "Operational performance reporting",
+    "year": "2026",
+    "status": "Governed assistant",
+    "duration": "Operational system",
+    "sections": [
+      {
+        "title": "Overview",
+        "paragraphs": [
+          "Many organizations already have the data required to answer important business questions.",
+          "The problem is that the data is hidden behind complex dashboards, fragmented reports, access rules, and domain-specific logic.",
+          "In this case, a business unit had extensive operational data covering inventory, enquiries, leads, opportunities, cancellations, sales, sales staff, discounts, forecasts, and project-level performance.",
+          "The information existed, but answering simple executive questions could still be difficult.",
+          "The result was an Enterprise Knowledge Assistant: a governed AI agent that allows users to ask operational questions in natural language and receive reliable, access-aware, data-backed answers."
+        ]
+      },
+      {
+        "title": "The operational challenge",
+        "paragraphs": [
+          "The business unit already had a large Power BI dashboard with many pages of operational reporting.",
+          "But the dashboard had become difficult for executives and business users to navigate quickly.",
+          "The answers existed somewhere in the data, but users had to know which dashboard page to use, which filters to apply, and how to interpret the result."
+        ],
+        "bullets": [
+          "Inventory.",
+          "Enquiries.",
+          "Leads.",
+          "Opportunities.",
+          "Cancellations.",
+          "Sales.",
+          "Sales staff performance.",
+          "Discounts.",
+          "Forecasts.",
+          "Project-level performance.",
+          "Regional and temporal breakdowns.",
+          "Are we tracking well against forecast this quarter?",
+          "Which projects are behind forecast?",
+          "Which enquiry channels are converting best this month?",
+          "How are sales performing by project, area, or state?",
+          "Where are cancellations increasing?",
+          "Which discounts are affecting performance?"
+        ]
+      },
+      {
+        "title": "Before",
+        "paragraphs": [
+          "Before the assistant, users had to navigate a large reporting environment manually."
+        ],
+        "bullets": [
+          "Important answers were buried across many dashboard pages.",
+          "Executives had to remember where different metrics lived.",
+          "Questions involving time, project, area, state, or forecast comparisons required careful filtering.",
+          "Business users depended on analysts for recurring questions.",
+          "Data access rules needed to be preserved.",
+          "Open-ended AI access to data was too risky for high-trust reporting."
+        ]
+      },
+      {
+        "title": "The AI opportunity",
+        "paragraphs": [
+          "The opportunity was not to build a generic “chat with your data” tool.",
+          "That framing is too weak for enterprise reporting.",
+          "The real opportunity was to create a governed decision-navigation layer over operational data.",
+          "The design principle was reliability over open-ended freedom.",
+          "Rather than giving the agent unrestricted access and hoping it reasoned correctly, the system used blueprints for the types of questions the business actually asks."
+        ],
+        "bullets": [
+          "Understand natural language business questions.",
+          "Map questions to trusted analytical pathways.",
+          "Use predefined blueprints for common executive query types.",
+          "Generate SQL safely against approved data sources.",
+          "Respect the user’s underlying data permissions.",
+          "Return conversational answers backed by query results.",
+          "Support evaluation against a gold-standard dataset.",
+          "Track usage and accuracy over time."
+        ]
+      },
+      {
+        "title": "The solution",
+        "paragraphs": [
+          "I helped build an AI assistant that enables users to ask business performance questions in natural language.",
+          "The assistant interprets the question, selects the appropriate analytical blueprint, generates the required SQL, runs the query against governed data, and returns a clear answer.",
+          "For example, when a user asks about actuals versus forecast across a time period, project, area, or region, the assistant follows a defined reasoning pattern for that type of query.",
+          "This improves reliability because the system is not inventing a new analytical approach every time.",
+          "It is guided toward trusted business logic."
+        ]
+      },
+      {
+        "title": "How the system works",
+        "steps": [
+          { "label": "Receive natural language question", "body": "The user asks a business performance question conversationally." },
+          { "label": "Classify the query type", "body": "The system identifies which analytical pattern or blueprint the question belongs to." },
+          { "label": "Apply business logic", "body": "The assistant uses the relevant blueprint to determine the correct metrics, filters, dimensions, and comparison logic." },
+          { "label": "Respect access controls", "body": "User permissions are passed through so the agent can only query data the user is allowed to access." },
+          { "label": "Generate and run SQL", "body": "The assistant queries governed datasets using the approved logic." },
+          { "label": "Return answer", "body": "The system provides a conversational response with the relevant figures and explanation." },
+          { "label": "Evaluate and improve", "body": "A gold dataset is used to test the assistant’s accuracy across common question types." }
+        ]
+      },
+      {
+        "title": "Trust and governance considerations",
+        "paragraphs": [
+          "This project required a high-trust architecture because users were asking real business performance questions."
+        ],
+        "bullets": [
+          "Access-aware querying.",
+          "Preventing users from seeing data they were not authorized to access.",
+          "Avoiding open-ended agent behavior over sensitive data.",
+          "Creating blueprints for common analytical question types.",
+          "Building a gold dataset for evaluation.",
+          "Running accuracy checks against expected answers.",
+          "Tracking usage and performance as adoption increased.",
+          "Providing transparency around how answers were generated."
+        ],
+        "closing": "The hardest part was not building a chat interface. The hardest part was making the assistant reliable enough for business users to trust."
+      },
+      {
+        "title": "Impact",
+        "paragraphs": [
+          "The assistant reduced the distance between business questions and business answers."
+        ],
+        "bullets": [
+          "Faster access to operational performance insights.",
+          "Reduced need to manually navigate large dashboard environments.",
+          "Improved self-service access for recurring executive questions.",
+          "More consistent answers through blueprint-guided analysis.",
+          "Better governance through access-aware querying.",
+          "Stronger trust through evaluation against gold-standard datasets.",
+          "A more natural interface for complex operational data."
+        ],
+        "closing": "The value was not that users could chat with a database. The value was that business users could ask high-value operational questions and receive governed, data-backed answers without manually navigating dozens of dashboard pages."
+      },
+      {
+        "title": "What this project demonstrates",
+        "paragraphs": [
+          "This project demonstrates the difference between a chatbot and an enterprise AI system.",
+          "A chatbot responds.",
+          "An enterprise AI system understands the workflow, applies business logic, respects permissions, runs reliable analysis, and produces decision-ready answers."
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "voice-of-customer-intelligence-system",
+    "title": "Voice-of-Customer Intelligence System",
+    "eyebrow": "Customer Insights",
+    "summary": "Turning open-text survey feedback into journey-stage insight.",
+    "hero": "Turning open-text customer feedback into lifecycle-stage intelligence",
+    "image": "/Survey & Sentiment Intelligence.png",
+    "client": "Confidential customer team",
+    "industry": "Customer experience",
+    "year": "2026",
+    "status": "Voice-of-customer workflow",
+    "duration": "Operational system",
+    "sections": [
+      {
+        "title": "Overview",
+        "paragraphs": [
+          "Customer feedback is often collected at many points across a customer journey.",
+          "But open-text responses are difficult to analyze at scale.",
+          "Teams may collect thousands of comments, but if those comments are only reviewed manually once a quarter or twice a year, the organization loses the ability to detect emerging themes, understand conversion friction, and identify strengths or weaknesses by journey stage.",
+          "This project focused on turning open-text survey feedback into structured Voice-of-Customer intelligence."
+        ]
+      },
+      {
+        "title": "The operational challenge",
+        "paragraphs": [
+          "The organization collected survey feedback from customers across multiple touchpoints in the customer journey.",
+          "Many surveys included open-text questions such as why a customer gave a particular rating.",
+          "These comments contained valuable information, but the previous workflow was manual and infrequent.",
+          "As a result, a lot of insight remained anecdotal.",
+          "People could form a general sense of what customers were saying, but there was no scalable way to quantify and monitor themes across the journey."
+        ],
+        "bullets": [
+          "Detect recurring themes.",
+          "Separate positive and negative sentiment by topic.",
+          "Understand how issues differed across the customer journey.",
+          "Compare feedback from converted versus lost customers.",
+          "Identify friction points affecting conversion.",
+          "Track changes over time.",
+          "Turn qualitative comments into structured reporting."
+        ]
+      },
+      {
+        "title": "Before",
+        "paragraphs": [
+          "Before the system, open-text survey comments were reviewed manually."
+        ],
+        "bullets": [
+          "Feedback analysis happened too infrequently.",
+          "Teams had to rely on manual reading and interpretation.",
+          "Themes were difficult to quantify consistently.",
+          "Mixed feedback inside a single comment was hard to classify.",
+          "Journey-stage trends were not easy to detect.",
+          "Differences between converted and lost customers were hard to analyze.",
+          "Insights were often based on vibe rather than structured evidence."
+        ]
+      },
+      {
+        "title": "The AI opportunity",
+        "paragraphs": [
+          "The opportunity was to use AI to convert unstructured customer comments into structured, multi-label insight.",
+          "A simple sentiment score would not be enough.",
+          "Customer comments often contain multiple ideas in one response.",
+          "For example, a customer might say they liked the amenities but found staff communication frustrating. That should not be classified as one overall sentiment. It should be split into multiple themes, each with its own category, subcategory, and sentiment."
+        ],
+        "bullets": [
+          "Read comments in context.",
+          "Extract multiple themes from a single comment.",
+          "Assign main categories.",
+          "Assign subcategories.",
+          "Identify sentiment for each theme.",
+          "Preserve nuance when feedback was mixed.",
+          "Visualize trends by journey stage.",
+          "Compare sentiment and themes across customer outcomes."
+        ]
+      },
+      {
+        "title": "The solution",
+        "paragraphs": [
+          "I helped build a Voice-of-Customer intelligence workflow that processes open-text survey comments with an LLM and converts them into structured analytical data.",
+          "Each comment is analyzed with relevant survey and journey context.",
+          "The system extracts one or more themes from the comment, assigning category, subcategory, and sentiment at the theme level.",
+          "The structured outputs are then visualized to show how customer sentiment and themes change across the customer journey.",
+          "This allows teams to move from manual comment review to scalable insight generation."
+        ]
+      },
+      {
+        "title": "How the system works",
+        "steps": [
+          { "label": "Collect survey responses", "body": "Customer feedback is gathered across multiple journey touchpoints." },
+          { "label": "Provide context", "body": "The system receives the comment along with relevant survey and journey-stage context." },
+          { "label": "Extract themes", "body": "The LLM identifies one or more themes inside the comment." },
+          { "label": "Classify", "body": "Each theme is assigned a main category, subcategory, and sentiment." },
+          { "label": "Structure", "body": "The outputs are converted into analytical tables." },
+          { "label": "Visualize", "body": "Teams can inspect which categories and sentiments trend across different journey stages and customer outcomes." },
+          { "label": "Act", "body": "The insights help identify strengths, friction points, and improvement opportunities." }
+        ]
+      },
+      {
+        "title": "Trust and governance considerations",
+        "paragraphs": [
+          "The key challenge was preserving nuance.",
+          "Open-text feedback is messy. Comments can include multiple topics, conflicting sentiment, vague references, and domain-specific language."
+        ],
+        "bullets": [
+          "Avoiding one-label simplification of multi-topic feedback.",
+          "Making categories consistent enough for reporting.",
+          "Capturing sentiment at the theme level rather than only the comment level.",
+          "Providing enough context so the model understood the customer journey stage.",
+          "Designing outputs that analysts and business teams could validate.",
+          "Ensuring the system supported decision-making rather than replacing human judgment."
+        ],
+        "closing": "The system was designed to make qualitative feedback analyzable without stripping away the nuance that made it valuable."
+      },
+      {
+        "title": "Impact",
+        "paragraphs": [
+          "The system transformed customer verbatims into a structured intelligence layer."
+        ],
+        "bullets": [
+          "Faster analysis of open-text survey responses.",
+          "Scalable theme and sentiment extraction.",
+          "Better visibility of customer pain points across the journey.",
+          "Improved understanding of why customers convert or drop off.",
+          "Better ability to identify strengths as well as weaknesses.",
+          "More evidence-based prioritization of customer experience improvements.",
+          "Reduced reliance on manual quarterly or half-yearly review cycles."
+        ],
+        "closing": "The value was not simply classifying comments. The value was helping teams understand what customers were experiencing at each stage of the journey and where operational improvements could influence conversion, satisfaction, and retention."
+      },
+      {
+        "title": "What this project demonstrates",
+        "paragraphs": [
+          "This project demonstrates how AI can make qualitative customer feedback operationally useful.",
+          "The organization already had the customer voice.",
+          "The system helped turn that voice into structured, decision-ready intelligence."
+        ]
+      }
+    ]
+  }
+]

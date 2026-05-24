@@ -30,7 +30,7 @@
       "type": "linkedin",
       "url": "https://www.linkedin.com/in/asimadnan/",
       "image": "/linked-poster.png",
-      "description": "Connect with me on LinkedIn for professional networking."
+      "description": "Connect with Asim on LinkedIn for professional networking."
     },
     {
       "id": "github",
@@ -38,7 +38,7 @@
       "type": "github",
       "url": "https://github.com/asimadnan",
       "image": "github-poster.png",
-      "description": "Explore my open-source projects and contributions."
+      "description": "Explore Asim's open-source projects and contributions."
     },
     {
       "id": "calendar",
@@ -81,8 +81,38 @@
       "featured": true
     },
     {
+      "id": "executive-intelligence-agent-system",
+      "title": "Executive Intelligence Agent System",
+      "description": "Enterprise operational intelligence agent that analyzes customer complaints weekly, detects emerging risk patterns across business units and assets, compares week-over-week, month-over-month, and year-over-year changes, and generates automated Monday executive briefings from raw complaint narratives.",
+      "image": "/placeholder.svg?height=900&width=600",
+      "technologies": ["LLMs", "Agentic Workflows", "Trend Analysis", "Risk Detection", "Automated Reporting"],
+      "links": { "website": "private-project", "github": "private-project" },
+      "category": "AI/ML",
+      "featured": true
+    },
+    {
+      "id": "acquisition-site-intelligence-agent",
+      "title": "Acquisition Site Intelligence Agent",
+      "description": "AI-powered acquisition research agent that gathers fragmented public and government information about prospective development sites, surfaces zoning and infrastructure signals, flags ownership, environmental, legal, and financial risks, and produces structured pre-feasibility intelligence reports.",
+      "image": "/placeholder.svg?height=900&width=600",
+      "technologies": ["AI Agents", "Retrieval Pipelines", "Entity Extraction", "Risk Signal Detection", "Report Generation"],
+      "links": { "website": "private-project", "github": "private-project" },
+      "category": "AI/ML",
+      "featured": true
+    },
+    {
+      "id": "mpc-sales-intelligence-analytics",
+      "title": "MPC Sales Intelligence Conversational Analytics System",
+      "description": "Conversational analytics system over MPC sales data that translates natural language questions into structured analytical workflows across leads, enquiries, sales, cancellations, forecasts, business units, and time periods, producing contextual business analysis instead of raw dashboard numbers.",
+      "image": "/placeholder.svg?height=900&width=600",
+      "technologies": ["LLM Orchestration", "Conversational Analytics", "Temporal Analysis", "Sales Intelligence", "Blueprinted Queries"],
+      "links": { "website": "private-project", "github": "private-project" },
+      "category": "AI/ML",
+      "featured": true
+    },
+    {
       "id": "style-my-avatar",
-      "title": "Style My Avatar - AI Avatar Generator",
+      "title": "Style Avatar - AI Avatar Generator",
       "description": "AI-powered avatar generation platform that creates personalized avatars using advanced generative models and style transfer techniques.",
       "image": "/projects/style-my-poster.png",
       "technologies": ["Python", "Stable Diffusion", "PyTorch", "FastAPI", "Next.js"],

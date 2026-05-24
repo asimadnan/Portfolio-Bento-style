@@ -53,7 +53,7 @@ const featured = [
 const aiml = [
   {
     id: "style-my-avatar",
-    title: "Style My Avatar - AI Avatar Generator",
+    title: "Style Avatar - AI Avatar Generator",
     description:
       "AI-powered avatar generation platform that creates personalized avatars using generative models and style transfer.",
     poster: "/placeholder.svg?height=900&width=600",
@@ -148,7 +148,7 @@ const blog = [
   },
   {
     id: "ai-side-project",
-    title: "My First AI Side Project: What Broke and Why I'd Do It Again",
+    title: "First AI Side Project: What Broke and What Changed",
     description: "Lessons learned from launching.",
     poster: "/placeholder.svg?height=900&width=600",
     tags: ["Medium • Jun 15, 2025"],
